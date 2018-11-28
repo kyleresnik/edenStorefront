@@ -1,3 +1,18 @@
-<p>
-  admin works!
-</p>
+<div>
+  <h1>Sign In:</h1>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <label>
+      Email:
+      <input type="text" formControlName="email">
+    </label>
+
+    <label>
+      Password:
+      <textarea formControlName="password"></textarea>
+    </label>
+
+    <input type="submit" value="Password" class="passInput">
+  </form>
+</div>

@@ -1,0 +1,67 @@
+.aboutBgContainer {
+  background-image: url('../assets/photo-1497990571654-77aa8ec36038.jpeg');
+  background-size: cover;
+  height: 25em;
+  width: auto;
+  border-radius: 0.4em;
+  box-shadow: 5px 5px 20px black;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+.aboutContainer {
+  text-shadow: 1px 1px 1px white;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.333);
+  margin: 0;
+  margin-top: 2em;
+  padding: 0.5em;
+}
+
+.contactContainer {
+  text-align: center;
+}
+
+label {
+  display: block;
+  
+  input, textarea {
+      display: block;
+      width: 50%;
+      margin-bottom: 20px;
+      padding: 1em;
+  }
+
+  .error {
+      margin-top: -20px;
+      background: yellow;
+      padding: .5em;
+      display: inline-block;
+      font-size: .9em;
+      margin-bottom: 20px;
+  }
+}
+
+.cta {
+  background: #7700FF;
+  border: none;
+  color: white;
+
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1em;
+  cursor: pointer;
+  font-family: 'Montserrat';
+}
+
+.results {
+  margin-top: 50px;
+
+  strong {
+      display: block;
+  }
+  span {
+      margin-bottom: 20px;
+      display: block;
+  }
+}
