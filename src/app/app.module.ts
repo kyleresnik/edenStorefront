@@ -11,6 +11,7 @@ import { AdminComponent } from './admin/admin.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DataService } from './data.service';
 import { ReactiveFormsModule } from '@angular/forms';
+// import { AuthenticationService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ProductsComponent,
     AdminComponent,
-    NavbarComponent
+    NavbarComponent,
+    // AuthenticationService
   ],
   imports: [
     BrowserModule,

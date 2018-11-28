@@ -8,7 +8,7 @@ import { Plant } from '../models/plant.model'
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-
+  token: string;
   plant : Plant[];
 
   constructor(private data: DataService) { }
@@ -24,6 +24,15 @@ export class ProductsComponent implements OnInit {
     this.data.getPlants()
     .subscribe(Plant => this.plant = Plant)
     console.log(this.plant)
+  }
+
+  deletePlant(id){
+    if (sessionStorage.getItem('currentUser') !== null || undefined){
+      this.data.deletePlant(id).subscribe((res: any) => {console.log(res); this.getPlants()})
+    }
+    else {
+      alert('Cannot delete item.')
+    }
   }
 
 }
