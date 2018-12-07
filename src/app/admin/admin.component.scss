@@ -1,0 +1,20 @@
+.login-form {
+  background-image: url('../assets/pexels-photo-59599.jpeg');
+  font-weight: bold;
+  background-size: cover;
+  height: 80vh;
+  width: 75vw;
+  padding: 1em;
+  border-radius: 0.4em;
+  // margin-top: 3em;
+  // background: rgba(255, 255, 255, 0.333);
+}
+
+.transparentBox {
+  border-radius: 0.4em;
+  background: rgba(255, 255, 255, 0.333);
+  text-shadow: 1px 1px 1px white;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0.5em;
+}

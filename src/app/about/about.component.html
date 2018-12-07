@@ -1,3 +1,49 @@
-<p>
-  about works!
-</p>
+<h2 style="text-align: center">About Me</h2>
+<div class="aboutBgContainer">
+  <div class="aboutContainer" style="text-align: center; font-size: 1.2em;">
+    <p>Hi! I'm Tyler Shelton. Ever since I was a young boy, I would visit my grandpappy in the Netherlands.
+      He was a well-known gardener around his village in those parts, toiling away at all hours as he
+      curated his beautiful gardens. I learned a lot under his tutelage, as well as from the garden gnomes 
+      who would visit me in the nighttime and whisper gardening secrets into my ears. Both my talented grandpappy 
+      and the Netherland garden gnomes taught me everything I know about the craft. As such, I wanted to bring
+      my wonderful garden products to the people of the world. On Eden.com you will find many plant products,
+      from vegetables to home potted plants to trees of all kinds. Please browse for whatever product that interests
+      you and feel free to bask in the beauty of gardening.
+      From my backyard...to yours.
+    </p>  
+  </div>
+</div>
+<br>
+<h1>Contact Me:</h1>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <h5 *ngIf="success">Your form is valid!</h5>
+
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+      <div *ngIf="submitted && contactForm.controls.name.errors" class="error">
+        <div *ngIf="contactForm.controls.name.errors.required">Your name is required</div>
+      </div>
+    </label>
+  
+    <label>
+      Message:
+      <textarea formControlName="message"></textarea>
+      <div *ngIf="submitted && contactForm.controls.message.errors" class="error">
+        <div *ngIf="contactForm.controls.message.errors.required">A message is required</div>
+      </div>
+    </label>
+
+    <input type="submit" value="Send message" class="cta">
+  
+  </form>
+
+  <div *ngIf="submitted" class="results">
+    <strong>Name:</strong> 
+    <span>{{ contactForm.controls.name.value }}</span>
+
+    <strong>Message:</strong> 
+    <span>{{ contactForm.controls.message.value }}</span>
+  </div>

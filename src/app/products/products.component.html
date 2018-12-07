@@ -1,3 +1,10 @@
-<p>
-  products works!
-</p>
+<h1>PLANTS PLANTS PLANTS!!!</h1>
+<br>
+  <ul>
+    <li *ngFor="let plant of plant">
+      <p>{{ plant.product_name }}</p>
+      <p>{{ plant.product_description }}</p>
+      <p>Price: ${{ plant.product_price }}</p>
+      <button (click)="deletePlant(plant.id)" *ngIf="token !== null || undefined"> Delete </button>
+    </li>
+  </ul>
