@@ -1,28 +1,35 @@
 header {
-  background: #304E0C;
-  .logo {
-      font-weight: bold;
-  }
-  nav {
-      justify-self: right;
-  
-      ul {
-          list-style-type: none;
-          margin: 0; padding: 0;
-          li {
-              float: left;
-              a {
-                  padding: 1.5em;
-                  text-transform: uppercase;
-                  font-size: .8em;
-                  &:hover {
-                      background: rgb(146, 190, 92);
-                  }
-              }
-          }
-      }
-  }
+    background: #304E0C;
+
+    .logo {
+        font-weight: bold;
+    }
+
+    nav {
+        justify-self: right;
+    
+        ul {
+            list-style-type: none;
+            margin: 0; padding: 0;
+
+            li {
+                float: left;
+
+                a {
+                    padding: 1.5em;
+                    text-transform: uppercase;
+                    font-size: .8em;
+
+                    &:hover {
+                        background: rgb(146, 190, 92);
+                    }
+
+                }
+            }
+        }
+    }
 }
+
 .navTitle {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
